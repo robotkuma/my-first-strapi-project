@@ -822,13 +822,16 @@ export interface ApiGameGame extends Schema.CollectionType {
     singularName: 'game';
     pluralName: 'games';
     displayName: 'Games';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Title: Attribute.String & Attribute.Required;
-    Status: Attribute.Enumeration<['received', 'pending', 'approved']> &
+    Status: Attribute.Enumeration<
+      ['received', 'pending', 'approved', 'denied']
+    > &
       Attribute.Required &
       Attribute.DefaultTo<'received'>;
     createdAt: Attribute.DateTime;

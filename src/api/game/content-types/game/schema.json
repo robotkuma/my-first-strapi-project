@@ -4,7 +4,8 @@
   "info": {
     "singularName": "game",
     "pluralName": "games",
-    "displayName": "Games"
+    "displayName": "Games",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,7 +21,8 @@
       "enum": [
         "received",
         "pending",
-        "approved"
+        "approved",
+        "denied"
       ],
       "required": true,
       "default": "received"
